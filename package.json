@@ -27,6 +27,7 @@
     "gatsby-plugin-sitemap": "^5.7.0",
     "gatsby-plugin-styled-components": "^5.7.0",
     "gatsby-source-filesystem": "^4.7.0",
+    "gatsby-source-wordpress": "^6.7.0",
     "gatsby-transformer-geojson": "^1.0.2",
     "gatsby-transformer-remark": "^5.7.0",
     "gatsby-transformer-sharp": "^4.7.0",
