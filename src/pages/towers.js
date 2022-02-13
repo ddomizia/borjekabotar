@@ -54,12 +54,12 @@ const project = ({ data }) => {
         {towers.map(({ node }, k) => {
           return (
             <Container key={k}>
-              <Row className="col-md-10 mx-auto my-5">
+              {/* <Row className="col-md-10 mx-auto my-5">
                 <StaticImage
                   src="../../static/images/survey_pigeon_towers.jpg"
                   objectFit="cover"
                 />
-              </Row>
+              </Row> */}
               <Row className="col-md-8 mx-auto my-5">
                 <Col>
                   <div dangerouslySetInnerHTML={{ __html: node.html }} />

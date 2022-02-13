@@ -33,7 +33,15 @@ const Footer = () => {
                   </a>
                 </p>
               </Col>
-              <Col></Col>
+              <Col className="partner">
+                <StaticImage
+                  src="../../static/logos/ismeo.png"
+                  alt="Logo Borj-e Kabotar"
+                  width="100"
+                  placeholder="blurred"
+                  objectFit="contain"
+                />
+              </Col>
             </Row>
             <Row></Row>
           </Container>
@@ -61,6 +69,9 @@ const Wrapper = styled.section`
   }
   .b-and-w {
     margin-top: 2rem;
+    filter: invert(100%);
+  }
+  .partner img {
     filter: invert(100%);
   }
 `;

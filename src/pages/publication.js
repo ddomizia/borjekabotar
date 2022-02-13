@@ -55,9 +55,6 @@ const project = ({ data }) => {
             return (
               <Container key={k}>
                 <Row className="col-md-8 mx-auto my-5">
-                  <h2>{node.frontmatter.title}</h2>
-                </Row>
-                <Row className="col-md-8 mx-auto my-5">
                   <Col>
                     <div dangerouslySetInnerHTML={{ __html: node.html }} />
                   </Col>

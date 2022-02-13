@@ -1,3 +1,6 @@
+a {
+    text-decoration: none !important;
+}
 blockquote {
     text-align: center;
 }
@@ -10,7 +13,8 @@ h6 {
     font-family: "Cinzel Decorative",
     cursive
 }
-p {
+p,
+li {
     font-family: "Montserrat",
         sans-serif
 }
@@ -28,4 +32,24 @@ p {
     p {
         font-size: 2rem;
     }
+}
+span {
+    font-family: "Montserrat";
+    background-color: rgba(204, 119, 34, 0.7);
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    border: none;
+    font-size: 2rem;
+
+    &:hover {
+        background-color: rgba(204, 119, 34, 0.7);
+        border: none;
+        font-weight: 700;
+    }
+}
+
+.carousel-indicators,
+.carousel-control-next,
+.carousel-control-prev {
+    visibility: hidden;
 }

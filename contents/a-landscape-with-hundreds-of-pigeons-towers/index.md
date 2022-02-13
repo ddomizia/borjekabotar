@@ -23,7 +23,7 @@ The cylindrical pigeons towers have a **diameter** that can reach **25 meters** 
 
 The descriptions by **Jean Chardin** in his Voyages en _Perse et autres lieux_ de l’_Orient_ travelling in Persia from 1673 to 1677 or by **Thomas Herbert**, in his book _Travels in Persia 1627-29_, among the various European travelers in Iran, tell us how the towers were built to attract huge flocks of wild pigeons, numbering in the thousands. Chardin estimated there were more than 3000 pigeon towers in and around Isfahan.
 
-![Una vista delle piccionaie di Isfahan](./survey_pigeon_towers.jpg)
+![Pigeon towers of Isfahan](./towers_isfahan.jpg)
 
 ### What are these towers for?
 

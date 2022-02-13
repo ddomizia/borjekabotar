@@ -2,20 +2,23 @@ import React from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 
-import PageLayout from "../templates/Layout";
+import Layout from "../templates/ConLayout";
 import { Row, Col, Card, CardGroup } from "react-bootstrap";
 
 const team = () => {
   return (
     <div>
-      <PageLayout>
+      <Layout>
         <Wrapper>
-          <StaticImage
-            src="../../static/images/towers_isfahan.jpg"
-            alt=""
-            objectFit="cover"
-            className="bg-image"
-          />
+          <div className="bg-image">
+            <StaticImage
+              src="../../static/images/towers_isfahan.jpg"
+              alt=""
+              objectFit="cover"
+              className="bg-image"
+            />
+            <h2>Team</h2>
+          </div>
           <section>
             <Row className="col-md-8 mx-auto my-5">
               <Col>
@@ -52,42 +55,13 @@ const team = () => {
             </Row>
           </section>
         </Wrapper>
-      </PageLayout>
+      </Layout>
     </div>
   );
 };
 
 //style
 const Wrapper = styled.section`
-  .bg-image img {
-    height: calc(50vh);
-    width: calc(300vh);
-  }
-  /* p .card-text {
-    font-family: "Noto Sans JP", serif;
-    font-weight: 300;
-    font-size: 1rem;
-  }
-  section {
-    margin: 2rem 2rem;
-  }
-  .card {
-    margin-right: 0.4rem;
-    border: none;
-  }
-  .card-title {
-    font-family: "Noto Serif JP", serif;
-    font-weight: 800;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .card-text.position {
-    font-family: "Noto Sans JP", serif;
-    font-weight: 800;
-    font-style: italic;
-    font-size: 1rem !important;
-    text-align: center;
-  } */
 `;
 
 export default team;
