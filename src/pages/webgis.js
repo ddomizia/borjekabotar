@@ -9,13 +9,13 @@ import {
 } from "react-leaflet";
 
 import pTowers from "../../geojson/ptowers.json";
-import Map from "../templates/Map";
+import Layout from "../templates/Layout";
 
 const webgis = () => {
   const position = [32.740464, 51.493785];
   return (
     <>
-      <Map>
+      <Layout>
         <div>
           <MapContainer
             center={position}
@@ -42,7 +42,7 @@ const webgis = () => {
             </FeatureGroup>
           </MapContainer>
         </div>
-      </Map>
+      </Layout>
     </>
   );
 };
