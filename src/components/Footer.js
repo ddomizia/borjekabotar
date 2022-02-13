@@ -33,11 +33,19 @@ const Footer = () => {
                   </a>
                 </p>
               </Col>
-              <Col className="partner">
+              <Col>
                 <StaticImage
                   src="../../static/logos/ismeo.png"
                   alt="Logo Borj-e Kabotar"
-                  width="100"
+                  width="110"
+                  placeholder="blurred"
+                  objectFit="contain"
+                  className="partner"
+                />
+                <StaticImage
+                  src="../../static/logos/min_aff_est.png"
+                  alt="Logo Borj-e Kabotar"
+                  width="150"
                   placeholder="blurred"
                   objectFit="contain"
                 />
@@ -73,6 +81,9 @@ const Wrapper = styled.section`
   }
   .partner img {
     filter: invert(100%);
+  }
+  img {
+    margin-right: 2rem;
   }
 `;
 export default Footer;
