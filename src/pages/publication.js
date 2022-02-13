@@ -6,6 +6,9 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../templates/ConLayout";
 
+import Favicon_32 from "../../static/favicon/favicon-32x32.png";
+import Favicon_ico from "../../static/favicon/favicon-32x32.png";
+
 const project = ({ data }) => {
   const bibliography = data.allMarkdownRemark.edges;
   return (
@@ -13,7 +16,10 @@ const project = ({ data }) => {
       {bibliography.map(({ node }, k) => {
         return (
           <Helmet key={k}>
-            <title>{node.frontmatter.title}</title>
+            <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
+            <link rel="shortcut icon" type="image/x-icon" href={Favicon_ico} />
+            <title>Borj-e Kabotar | Pubblications</title>
+
             <meta name="description" content={node.frontmatter.meta} />
             <link rel="canonical" href={node.frontmatter.link} />
 

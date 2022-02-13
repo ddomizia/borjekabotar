@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
         <link rel="shortcut icon" type="image/x-icon" href={Favicon_ico} />
 
         <title>
-          Borj-e Kabotar
+          Borj-e Kabotar | Home
         </title>
 
         <meta name="description" content="Borj-e Kabotar" />

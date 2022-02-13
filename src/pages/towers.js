@@ -3,8 +3,11 @@ import { graphql, withPrefix } from "gatsby";
 import { Helmet } from "react-helmet";
 import { StaticImage } from "gatsby-plugin-image";
 
-import { Container, Row, Col, Carousel } from "react-bootstrap";
+import { Container, Row, Col} from "react-bootstrap";
 import Layout from "../templates/ConLayout";
+
+import Favicon_32 from "../../static/favicon/favicon-32x32.png";
+import Favicon_ico from "../../static/favicon/favicon-32x32.png";
 
 const project = ({ data }) => {
   const towers = data.allMarkdownRemark.edges;
@@ -13,7 +16,10 @@ const project = ({ data }) => {
       {towers.map(({ node }, k) => {
         return (
           <Helmet key={k}>
-            <title>{node.frontmatter.title}</title>
+            <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
+            <link rel="shortcut icon" type="image/x-icon" href={Favicon_ico} />
+            <title>Borj-e Kabotar | Towers </title>
+
             <meta name="description" content={node.frontmatter.meta} />
             <link rel="canonical" href={node.frontmatter.link} />
 
@@ -54,12 +60,6 @@ const project = ({ data }) => {
         {towers.map(({ node }, k) => {
           return (
             <Container key={k}>
-              {/* <Row className="col-md-10 mx-auto my-5">
-                <StaticImage
-                  src="../../static/images/survey_pigeon_towers.jpg"
-                  objectFit="cover"
-                />
-              </Row> */}
               <Row className="col-md-8 mx-auto my-5">
                 <Col>
                   <div dangerouslySetInnerHTML={{ __html: node.html }} />

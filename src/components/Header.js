@@ -28,7 +28,7 @@ const Header = () => {
                 <Nav.Link href={withPrefix(`/`)}>Home</Nav.Link>
                 <NavDropdown title="Project" id="basic-nav-dropdown">
                   <NavDropdown.Item href={withPrefix(`/geo/`)}>
-                    Geographical Setting
+                    Geographical Settings
                   </NavDropdown.Item>
                   <NavDropdown.Item href={withPrefix(`/towers/`)}>
                     Towers
@@ -55,7 +55,7 @@ const Header = () => {
 //style
 const Wrapper = styled.section`
   .dropdown-menu {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.4);
   }
   .dropdown-item {
     font-family: "Montserrat", sans-serif !important;
@@ -63,7 +63,7 @@ const Wrapper = styled.section`
     &:hover {
       color: rgb(255, 255, 255);
       background-color: transparent;
-      text-decoration: underline;
+      text-decoration: underline!important;
     }
   }
   .navbar-toggler-icon {

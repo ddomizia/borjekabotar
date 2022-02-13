@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { Carousel } from 'react-bootstrap'
 import Layout from "../templates/Layout"
@@ -10,7 +9,6 @@ import Image2 from "../../static/images/towers_isfahan.jpg";
 const index = () => {
   return (
     <Layout>
-      <Wrapper>
         <Carousel>
           <Carousel.Item className="min-vh-50">
             <img className="d-block w-100" src={Image2} alt="" />
@@ -26,11 +24,8 @@ const index = () => {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-      </Wrapper>
     </Layout>
   );
 }
-
-const Wrapper = styled.section``;
 
 export default index
