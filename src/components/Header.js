@@ -74,8 +74,8 @@ const Wrapper = styled.section`
   }
   .nav-link {
     font-family: "Montserrat", sans-serif !important;
-    color: rgba(255, 255, 255, 0.7) !important;
-    font-weight: 400;
+    color: rgba(255, 255, 255) !important;
+    font-weight: 500;
     font-size: 1rem;
     margin-left: 1rem;
     &:hover {

@@ -33,13 +33,14 @@ li {
         font-size: 2rem;
     }
 }
-span {
-    font-family: "Montserrat";
-    background-color: rgba(204, 119, 34, 0.7);
-    color: rgb(255, 255, 255);
-    padding: 1rem;
-    border: none;
-    font-size: 2rem;
+.btn-link {
+    font-family: "Montserrat" !important;
+    background-color: rgba(204, 119, 34, 0.7)!important;
+    color: rgb(255, 255, 255) !important;
+    padding: 1rem !important;
+    border: none !important;
+    font-size: 2rem !important;
+    text-decoration: none !important;
 
     &:hover {
         background-color: rgba(204, 119, 34, 0.7);

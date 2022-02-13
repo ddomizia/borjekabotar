@@ -12,6 +12,8 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-leaflet`,
+    `gatsby-transformer-geojson`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,6 +29,12 @@ module.exports = {
         path: `${__dirname}/static/`,
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/geojson/ptowers.json`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
