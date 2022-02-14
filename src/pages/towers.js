@@ -47,7 +47,7 @@ const project = ({ data }) => {
 
         <div className="bg-image">
           <StaticImage
-            src="../../static/images/towers_isfahan.jpg"
+            src="../../static/images/towers_background.jpg"
             alt=""
             objectFit="cover"
             placeholder="blurred"

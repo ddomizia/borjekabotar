@@ -21,7 +21,7 @@ In-depth research of historical and architectural sources is essential. An attem
 
 The map highlights the centers around which the greatest number of pigeons towers were identified during the survey in 2008. They are focused on the area of the oasis of Isfahan crossed by the Zayandè river and its tributaries and on the westernmost area of the current province, the greenest and most irrigated, around Golpayegan.
 
-![Area di indagine](./survey_towers.jpg)
+![Area di indagine](../images/survey_towers.jpg)
 
 The pigeons houses that have been documented are highlighted in red. We recorded in our system almost **one hundred** towers working for **five days** on the field along **six hundred kilometers** in the oasis.
 

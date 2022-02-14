@@ -46,7 +46,7 @@ const news = () => {
 
         <div className="bg-image">
           <StaticImage
-            src="../../static/images/towers_isfahan.jpg"
+            src="../../static/images/news_background.jpg"
             alt=""
             objectFit="cover"
           />

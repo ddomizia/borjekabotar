@@ -45,37 +45,29 @@ const project = ({ data }) => {
         );
       })}
 
-   
-        <div className="bg-image">
-          <StaticImage
-            src="../../static/images/towers_isfahan.jpg"
-            alt=""
-            objectFit="cover"
-          />
-          {survey.map(({ node }, k) => {
-            return <h2>{node.frontmatter.title}</h2>;
-          })}
-        </div>
-        <section>
-          {survey.map(({ node }, k) => {
-            return (
-              <Container key={k}>
-                <Row className="col-md-10 mx-auto my-5">
-                 {/*  <StaticImage
-                    src="../../static/images/survey_pigeon_towers.jpg"
-                    objectFit="cover"
-                  /> */}
-                </Row>
-                <Row className="col-md-8 mx-auto my-5">
-                  <Col>
-                    <div dangerouslySetInnerHTML={{ __html: node.html }} />
-                  </Col>
-                </Row>
-              </Container>
-            );
-          })}
-        </section>
-
+      <div className="bg-image">
+        <StaticImage
+          src="../../static/images/survey_background.jpg"
+          alt=""
+          objectFit="cover"
+        />
+        {survey.map(({ node }, k) => {
+          return <h2>{node.frontmatter.title}</h2>;
+        })}
+      </div>
+      <section>
+        {survey.map(({ node }, k) => {
+          return (
+            <Container key={k}>
+              <Row className="col-md-8 mx-auto my-5">
+                <Col>
+                  <div dangerouslySetInnerHTML={{ __html: node.html }} />
+                </Col>
+              </Row>
+            </Container>
+          );
+        })}
+      </section>
     </Layout>
   );
 };

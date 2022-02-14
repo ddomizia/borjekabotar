@@ -45,29 +45,29 @@ const project = ({ data }) => {
         );
       })}
 
-        <div className="bg-image">
-          <StaticImage
-            src="../../static/images/towers_isfahan.jpg"
-            alt=""
-            objectFit="cover"
-          />
-          {geography.map(({ node }, k) => {
-            return <h2>{node.frontmatter.title}</h2>;
-          })}
-        </div>
-        <section>
-          {geography.map(({ node }, k) => {
-            return (
-              <Container key={k}>
-                <Row className="col-md-8 mx-auto my-5">
-                  <Col>
-                    <div dangerouslySetInnerHTML={{ __html: node.html }} />
-                  </Col>
-                </Row>
-              </Container>
-            );
-          })}
-        </section>
+      <div className="bg-image">
+        <StaticImage
+          src="../../static/images/geo_setting_background.jpg"
+          alt=""
+          objectFit="cover"
+        />
+        {geography.map(({ node }, k) => {
+          return <h2>{node.frontmatter.title}</h2>;
+        })}
+      </div>
+      <section>
+        {geography.map(({ node }, k) => {
+          return (
+            <Container key={k}>
+              <Row className="col-md-8 mx-auto my-5">
+                <Col>
+                  <div dangerouslySetInnerHTML={{ __html: node.html }} />
+                </Col>
+              </Row>
+            </Container>
+          );
+        })}
+      </section>
     </Layout>
   );
 };
