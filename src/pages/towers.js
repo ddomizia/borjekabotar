@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import { graphql, withPrefix } from "gatsby";
 import { Helmet } from "react-helmet";
 import { StaticImage } from "gatsby-plugin-image";
@@ -13,37 +14,42 @@ const project = ({ data }) => {
   const towers = data.allMarkdownRemark.edges;
   return (
     <Layout>
-      {towers.map(({ node }, k) => {
-        return (
-          <Helmet key={k}>
-            <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
-            <link rel="shortcut icon" type="image/x-icon" href={Favicon_ico} />
-            <title>Borj-e Kabotar | Towers </title>
+      <Wrapper>
+        {towers.map(({ node }, k) => {
+          return (
+            <Helmet key={k}>
+              <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
+              <link
+                rel="shortcut icon"
+                type="image/x-icon"
+                href={Favicon_ico}
+              />
+              <title>Borj-e Kabotar | Towers </title>
 
-            <meta name="description" content={node.frontmatter.meta} />
-            <link rel="canonical" href={node.frontmatter.link} />
+              <meta name="description" content={node.frontmatter.meta} />
+              <link rel="canonical" href={node.frontmatter.link} />
 
-            <meta property="og:title" content={node.frontmatter.title} />
-            <meta property="og:description" content={node.frontmatter.meta} />
-            <meta property="og:url" content={node.frontmatter.link} />
-            <meta
-              property="og:image"
-              content={withPrefix(`static/logos/logo-bn.png`)}
-            />
+              <meta property="og:title" content={node.frontmatter.title} />
+              <meta property="og:description" content={node.frontmatter.meta} />
+              <meta property="og:url" content={node.frontmatter.link} />
+              <meta
+                property="og:image"
+                content={withPrefix(`static/logos/logo-bn.png`)}
+              />
 
-            <meta property="twitter:title" content={node.frontmatter.title} />
-            <meta
-              property="twitter:description"
-              content={node.frontmatter.meta}
-            />
-            <meta property="twitter:url" content={node.frontmatter.link} />
-            <meta
-              property="twitter:image"
-              content={withPrefix(`static/logos/logo-bn.png`)}
-            />
-          </Helmet>
-        );
-      })}
+              <meta property="twitter:title" content={node.frontmatter.title} />
+              <meta
+                property="twitter:description"
+                content={node.frontmatter.meta}
+              />
+              <meta property="twitter:url" content={node.frontmatter.link} />
+              <meta
+                property="twitter:image"
+                content={withPrefix(`static/logos/logo-bn.png`)}
+              />
+            </Helmet>
+          );
+        })}
 
         <div className="bg-image">
           <StaticImage
@@ -68,9 +74,20 @@ const project = ({ data }) => {
             </Container>
           );
         })}
+      </Wrapper>
     </Layout>
   );
 };
+
+const Wrapper = styled.section`
+  .bg-image img {
+    height: calc(50vh);
+    width: calc(300vh);
+  }
+  .col img {
+    max-width: 850px !important;
+  }
+`;
 
 export const query = graphql`
   {
