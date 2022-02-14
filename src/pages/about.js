@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import styled from "styled-components";
 import { withPrefix } from "gatsby";
 import { Helmet } from "react-helmet";
 import { StaticImage } from "gatsby-plugin-image";
@@ -97,8 +98,14 @@ const team = () => {
   );
 };
 
-//style
 const Wrapper = styled.section`
+  .bg-image img {
+    height: calc(50vh);
+    width: calc(300vh);
+  }
+  .col img {
+    max-width: 850px !important;
+  }
 `;
 
 export default team;

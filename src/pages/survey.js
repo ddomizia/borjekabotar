@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql, withPrefix } from "gatsby";
+import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -12,7 +13,8 @@ import Favicon_ico from "../../static/favicon/favicon-32x32.png";
 const project = ({ data }) => {
   const survey = data.allMarkdownRemark.edges;
   return (
-    <Layout>
+    <Layout> 
+      <Wrapper>
       {survey.map(({ node }, k) => {
         return (
           <Helmet key={k}>
@@ -68,9 +70,20 @@ const project = ({ data }) => {
           );
         })}
       </section>
+       </Wrapper>
     </Layout>
   );
 };
+
+const Wrapper = styled.section`
+  .bg-image img {
+    height: calc(50vh);
+    width: calc(300vh);
+  }
+  .col img {
+    max-width: 850px !important;
+  }
+`;
 
 export const query = graphql`
   {
