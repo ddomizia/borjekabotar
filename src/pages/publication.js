@@ -14,43 +14,38 @@ const project = ({ data }) => {
   const bibliography = data.allMarkdownRemark.edges;
   return (
     <Layout>
+      {bibliography.map(({ node }, k) => {
+        return (
+          <Helmet key={k}>
+            <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
+            <link rel="shortcut icon" type="image/x-icon" href={Favicon_ico} />
+            <title>Borj-e Kabotar | Pubblications</title>
+
+            <meta name="description" content={node.frontmatter.meta} />
+            <link rel="canonical" href={node.frontmatter.link} />
+
+            <meta property="og:title" content={node.frontmatter.title} />
+            <meta property="og:description" content={node.frontmatter.meta} />
+            <meta property="og:url" content={node.frontmatter.link} />
+            <meta
+              property="og:image"
+              content={withPrefix(`static/logos/logo-bn.png`)}
+            />
+
+            <meta property="twitter:title" content={node.frontmatter.title} />
+            <meta
+              property="twitter:description"
+              content={node.frontmatter.meta}
+            />
+            <meta property="twitter:url" content={node.frontmatter.link} />
+            <meta
+              property="twitter:image"
+              content={withPrefix(`static/logos/logo-bn.png`)}
+            />
+          </Helmet>
+        );
+      })}
       <Wrapper>
-        {bibliography.map(({ node }, k) => {
-          return (
-            <Helmet key={k}>
-              <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
-              <link
-                rel="shortcut icon"
-                type="image/x-icon"
-                href={Favicon_ico}
-              />
-              <title>Borj-e Kabotar | Pubblications</title>
-
-              <meta name="description" content={node.frontmatter.meta} />
-              <link rel="canonical" href={node.frontmatter.link} />
-
-              <meta property="og:title" content={node.frontmatter.title} />
-              <meta property="og:description" content={node.frontmatter.meta} />
-              <meta property="og:url" content={node.frontmatter.link} />
-              <meta
-                property="og:image"
-                content={withPrefix(`static/logos/logo-bn.png`)}
-              />
-
-              <meta property="twitter:title" content={node.frontmatter.title} />
-              <meta
-                property="twitter:description"
-                content={node.frontmatter.meta}
-              />
-              <meta property="twitter:url" content={node.frontmatter.link} />
-              <meta
-                property="twitter:image"
-                content={withPrefix(`static/logos/logo-bn.png`)}
-              />
-            </Helmet>
-          );
-        })}
-
         <div className="bg-image">
           <StaticImage
             src="../../static/images/pubblications_background.jpg"
@@ -62,7 +57,6 @@ const project = ({ data }) => {
             return <h2>{node.frontmatter.title}</h2>;
           })}
         </div>
-        <section>
           {bibliography.map(({ node }, k) => {
             return (
               <Container key={k}>
@@ -74,7 +68,6 @@ const project = ({ data }) => {
               </Container>
             );
           })}
-        </section>
       </Wrapper>
     </Layout>
   );

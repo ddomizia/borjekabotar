@@ -14,43 +14,38 @@ const project = ({ data }) => {
   const geography = data.allMarkdownRemark.edges;
   return (
     <Layout>
+      {geography.map(({ node }, k) => {
+        return (
+          <Helmet key={k}>
+            <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
+            <link rel="shortcut icon" type="image/x-icon" href={Favicon_ico} />
+            <title>Borj-e Kabotar | Geographical Settings</title>
+
+            <meta name="description" content={node.frontmatter.meta} />
+            <link rel="canonical" href={node.frontmatter.link} />
+
+            <meta property="og:title" content={node.frontmatter.title} />
+            <meta property="og:description" content={node.frontmatter.meta} />
+            <meta property="og:url" content={node.frontmatter.link} />
+            <meta
+              property="og:image"
+              content={withPrefix(`static/logos/logo-bn.png`)}
+            />
+
+            <meta property="twitter:title" content={node.frontmatter.title} />
+            <meta
+              property="twitter:description"
+              content={node.frontmatter.meta}
+            />
+            <meta property="twitter:url" content={node.frontmatter.link} />
+            <meta
+              property="twitter:image"
+              content={withPrefix(`static/logos/logo-bn.png`)}
+            />
+          </Helmet>
+        );
+      })}
       <Wrapper>
-        {geography.map(({ node }, k) => {
-          return (
-            <Helmet key={k}>
-              <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
-              <link
-                rel="shortcut icon"
-                type="image/x-icon"
-                href={Favicon_ico}
-              />
-              <title>Borj-e Kabotar | Geographical Settings</title>
-
-              <meta name="description" content={node.frontmatter.meta} />
-              <link rel="canonical" href={node.frontmatter.link} />
-
-              <meta property="og:title" content={node.frontmatter.title} />
-              <meta property="og:description" content={node.frontmatter.meta} />
-              <meta property="og:url" content={node.frontmatter.link} />
-              <meta
-                property="og:image"
-                content={withPrefix(`static/logos/logo-bn.png`)}
-              />
-
-              <meta property="twitter:title" content={node.frontmatter.title} />
-              <meta
-                property="twitter:description"
-                content={node.frontmatter.meta}
-              />
-              <meta property="twitter:url" content={node.frontmatter.link} />
-              <meta
-                property="twitter:image"
-                content={withPrefix(`static/logos/logo-bn.png`)}
-              />
-            </Helmet>
-          );
-        })}
-
         <div className="bg-image">
           <StaticImage
             src="../../static/images/geo_setting_background.jpg"
@@ -61,19 +56,17 @@ const project = ({ data }) => {
             return <h2>{node.frontmatter.title}</h2>;
           })}
         </div>
-        <section>
-          {geography.map(({ node }, k) => {
-            return (
-              <Container key={k}>
-                <Row className="col-md-8 mx-auto my-5">
-                  <Col>
-                    <div dangerouslySetInnerHTML={{ __html: node.html }} />
-                  </Col>
-                </Row>
-              </Container>
-            );
-          })}
-        </section>
+        {geography.map(({ node }, k) => {
+          return (
+            <Container key={k}>
+              <Row className="col-md-8 mx-auto my-5">
+                <Col>
+                  <div dangerouslySetInnerHTML={{ __html: node.html }} />
+                </Col>
+              </Row>
+            </Container>
+          );
+        })}
       </Wrapper>
     </Layout>
   );

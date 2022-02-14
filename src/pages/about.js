@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import styled from "styled-components";
 import { withPrefix } from "gatsby";
 import { Helmet } from "react-helmet";
 import { StaticImage } from "gatsby-plugin-image";
@@ -57,7 +56,6 @@ const team = () => {
             />
             <h2>Team</h2>
           </div>
-          <section>
             <Row className="col-md-8 mx-auto my-5">
               <Col>
                 <CardGroup>
@@ -91,7 +89,6 @@ const team = () => {
                 </CardGroup>
               </Col>
             </Row>
-          </section>
         </Wrapper>
       </Layout>
     </div>

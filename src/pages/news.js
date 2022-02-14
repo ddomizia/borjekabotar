@@ -14,38 +14,37 @@ const news = () => {
   return (
     <>
       <Layout>
+        <Helmet>
+          <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
+          <link rel="shortcut icon" type="image/x-icon" href={Favicon_ico} />
+          <title>Borj-e Kabotar | News</title>
+
+          <meta name="description" content="News of Borj-e Kabotar project" />
+          <link rel="canonical" href="" />
+
+          <meta property="og:title" content="Borj-e Kabotar | News" />
+          <meta
+            property="og:description"
+            content="News of Borj-e Kabotar project"
+          />
+          <meta property="og:url" content="" />
+          <meta
+            property="og:image"
+            content={withPrefix(`static/logos/logo-bn.png`)}
+          />
+
+          <meta property="twitter:title" content="Borj-e Kabotar | News" />
+          <meta
+            property="twitter:description"
+            content="News of Borj-e Kabotar project"
+          />
+          <meta property="twitter:url" content="" />
+          <meta
+            property="twitter:image"
+            content={withPrefix(`static/logos/logo-bn.png`)}
+          />
+        </Helmet>
         <Wrapper>
-          <Helmet>
-            <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
-            <link rel="shortcut icon" type="image/x-icon" href={Favicon_ico} />
-            <title>Borj-e Kabotar | News</title>
-
-            <meta name="description" content="News of Borj-e Kabotar project" />
-            <link rel="canonical" href="" />
-
-            <meta property="og:title" content="Borj-e Kabotar | News" />
-            <meta
-              property="og:description"
-              content="News of Borj-e Kabotar project"
-            />
-            <meta property="og:url" content="" />
-            <meta
-              property="og:image"
-              content={withPrefix(`static/logos/logo-bn.png`)}
-            />
-
-            <meta property="twitter:title" content="Borj-e Kabotar | News" />
-            <meta
-              property="twitter:description"
-              content="News of Borj-e Kabotar project"
-            />
-            <meta property="twitter:url" content="" />
-            <meta
-              property="twitter:image"
-              content={withPrefix(`static/logos/logo-bn.png`)}
-            />
-          </Helmet>
-
           <div className="bg-image">
             <StaticImage
               src="../../static/images/news_background.jpg"

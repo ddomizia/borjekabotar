@@ -13,8 +13,7 @@ import Favicon_ico from "../../static/favicon/favicon-32x32.png";
 const project = ({ data }) => {
   const survey = data.allMarkdownRemark.edges;
   return (
-    <Layout> 
-      <Wrapper>
+    <Layout>
       {survey.map(({ node }, k) => {
         return (
           <Helmet key={k}>
@@ -46,18 +45,19 @@ const project = ({ data }) => {
           </Helmet>
         );
       })}
+      
+      <Wrapper>
+        <div className="bg-image">
+          <StaticImage
+            src="../../static/images/survey_background.jpg"
+            alt=""
+            objectFit="cover"
+          />
+          {survey.map(({ node }, k) => {
+            return <h2>{node.frontmatter.title}</h2>;
+          })}
+        </div>
 
-      <div className="bg-image">
-        <StaticImage
-          src="../../static/images/survey_background.jpg"
-          alt=""
-          objectFit="cover"
-        />
-        {survey.map(({ node }, k) => {
-          return <h2>{node.frontmatter.title}</h2>;
-        })}
-      </div>
-      <section>
         {survey.map(({ node }, k) => {
           return (
             <Container key={k}>
@@ -69,8 +69,7 @@ const project = ({ data }) => {
             </Container>
           );
         })}
-      </section>
-       </Wrapper>
+      </Wrapper>
     </Layout>
   );
 };
