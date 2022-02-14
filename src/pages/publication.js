@@ -77,6 +77,7 @@ const Wrapper = styled.section`
   .bg-image img {
     height: calc(50vh);
     width: calc(300vh);
+    filter: brightness(70%);
   }
   .col img {
     max-width: 850px !important;
