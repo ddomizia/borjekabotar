@@ -54,10 +54,3 @@ li {
 .carousel-control-prev {
     visibility: hidden;
 }
-.leaflet-top {
-    top: 50%;
-    position: absolute;
-    z-index: 1000;
-    pointer-events: none;
-    transform: translate(0%, -50%);
-}

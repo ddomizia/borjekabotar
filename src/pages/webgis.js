@@ -9,6 +9,7 @@ import {
 } from "react-leaflet";
 
 import { Helmet } from "react-helmet";
+import styled from "styled-components";
 import { withPrefix } from "gatsby";
 import pTowers from "../../geojson/ptowers.json";
 import Layout from "../templates/Layout";
@@ -52,7 +53,7 @@ const webgis = () => {
             content={withPrefix(`static/logos/logo-bn.png`)}
           />
         </Helmet>
-
+        <Wrapper>
         <div>
           <MapContainer
             center={position}
@@ -79,9 +80,20 @@ const webgis = () => {
             </FeatureGroup>
           </MapContainer>
         </div>
+        </Wrapper>
       </Layout>
     </>
   );
 };
+
+const Wrapper = styled.section`
+  .leaflet-top {
+    top: 50%;
+    position: absolute;
+    z-index: 1000;
+    pointer-events: none;
+    transform: translate(0%, -50%);
+  }
+`;
 
 export default webgis;
