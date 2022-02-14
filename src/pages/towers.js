@@ -45,11 +45,11 @@ const project = ({ data }) => {
           </Helmet>
         );
       })}
-      
+
       <Wrapper>
         <div className="bg-image">
           <StaticImage
-            src="../../static/images/towers_background.jpg"
+            src="../../static/images/towers_isfahan.jpg"
             alt=""
             objectFit="cover"
             placeholder="blurred"
