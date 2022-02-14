@@ -1,5 +1,5 @@
 ---
-title: "A landscape of thousands pigeons towers in Isfahan"
+title: "A landscape with hundreds of pigeons towers around Isfahan"
 img: ./survey_pigeon_towers.jpg
 meta: "The towers for pigeons are widespread in the areas around Isfahan and Golpayegan and even today characterise the landscape."
 tags: "pigeons towers"
