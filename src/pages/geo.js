@@ -1,14 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { graphql, withPrefix } from "gatsby";
-import { Helmet } from "react-helmet";
 import { StaticImage } from "gatsby-plugin-image";
 
 import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../templates/ConLayout";
-
-import Favicon_32 from "../../static/favicon/favicon-32x32.png";
-import Favicon_ico from "../../static/favicon/favicon-32x32.png";
+import Seo from "../components/SEO"
 
 const project = ({ data }) => {
   const geography = data.allMarkdownRemark.edges;
@@ -16,33 +13,12 @@ const project = ({ data }) => {
     <Layout>
       {geography.map(({ node }, k) => {
         return (
-          <Helmet key={k}>
-            <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
-            <link rel="shortcut icon" type="image/x-icon" href={Favicon_ico} />
-            <title>Borj-e Kabotar | Geographical Settings</title>
-
-            <meta name="description" content={node.frontmatter.meta} />
-            <link rel="canonical" href={node.frontmatter.link} />
-
-            <meta property="og:title" content={node.frontmatter.title} />
-            <meta property="og:description" content={node.frontmatter.meta} />
-            <meta property="og:url" content={node.frontmatter.link} />
-            <meta
-              property="og:image"
-              content={withPrefix(`static/logos/logo-bn.png`)}
-            />
-
-            <meta property="twitter:title" content={node.frontmatter.title} />
-            <meta
-              property="twitter:description"
-              content={node.frontmatter.meta}
-            />
-            <meta property="twitter:url" content={node.frontmatter.link} />
-            <meta
-              property="twitter:image"
-              content={withPrefix(`static/logos/logo-bn.png`)}
-            />
-          </Helmet>
+          <Seo key = {k}
+            title={node.frontmatter.title}
+            description={node.frontmatter.description}
+            url={node.frontmatter.url}
+            image={withPrefix(`static/logos/logo_bn.png`)}
+          />
         );
       })}
       <Wrapper>
@@ -95,10 +71,10 @@ export const query = graphql`
         node {
           html
           frontmatter {
-            meta
+            description
             tags
             title
-            link
+            url
           }
         }
       }

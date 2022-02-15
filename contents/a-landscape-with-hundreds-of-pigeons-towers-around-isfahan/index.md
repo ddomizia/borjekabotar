@@ -1,9 +1,9 @@
 ---
 title: "A landscape with hundreds of pigeons towers around Isfahan"
 img: ./survey_pigeon_towers.jpg
-meta: "The towers for pigeons are widespread in the areas around Isfahan and Golpayegan and even today characterise the landscape."
+description: "The towers for pigeons are widespread in the areas around Isfahan and Golpayegan and even today characterise the landscape."
 tags: "pigeons towers"
-link: "https://borjekabotar.com/towers/"
+url: "https://borjekabotar.com/towers/"
 ---
 
 The **towers for pigeons** are widespread in the areas around **Isfahan** and **Golpayegan** and even today these buildings characterise the landscape. They are often imposing structures that can sometimes be mistaken for a defensive system. The earliest **towers** in the province of Isfahan date back to the 16th-17th centuries.
