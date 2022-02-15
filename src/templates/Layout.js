@@ -19,14 +19,14 @@ const Layout = ({ children }) => {
         <title>Borj-e Kabotar | Home</title>
 
         <meta name="description" content="Borj-e Kabotar" />
-        <link rel="canonical" href="https://borjekabotar.com" />
+        <link rel="canonical" href="https://borjekabotar.com/" />
 
         <meta property="og:title" content="Borj-e Kabotar" />
         <meta
           property="og:description"
           content="The towers for pigeons are widespread in the areas around Isfahan and Golpayegan and even today these buildings characterise the landscape. They are often imposing structures that can sometimes be mistaken for a defensive system. The earliest **towers** in the province of Isfahan date back to the 16th-17th centuries."
         />
-        <meta property="og:url" content="https://borjekabotar.com" />
+        <meta property="og:url" content="https://borjekabotar.com/" />
         <meta
           property="og:image"
           content={withPrefix(`static/logos/logo_bn.png`)}
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
           property="twitter:description"
           content="The towers for pigeons are widespread in the areas around Isfahan and Golpayegan and even today these buildings characterise the landscape. They are often imposing structures that can sometimes be mistaken for a defensive system. The earliest **towers** in the province of Isfahan date back to the 16th-17th centuries."
         />
-        <meta property="twitter:url" content="https://lad.saras.uniroma1.it" />
+        <meta property="twitter:url" content="https://borjekabotar.com/" />
         <meta
           property="twitter:image"
           content={withPrefix(`static/logos/logo_bn.png`)}

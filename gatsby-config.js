@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `borjekabotar`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://borjekabotar.com/`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -14,7 +14,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-leaflet`,
     `gatsby-transformer-geojson`,
-/*     {
+    /*     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: "images",
@@ -48,8 +48,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Cinzel Decorative\:400,700,900`,
-          `Montserrat\:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i`,
+          `Cinzel Decorative\:400`,
+          `Montserrat\:100,200,300,400,500,600,700,800`,
         ],
         display: "swap",
       },

@@ -3,6 +3,7 @@ title: "The province and the oasis of Isfahan"
 img: ./survey_towers.jpg
 meta: "The highest concentration of pigeons towers is located in the province of Isfahan in the area of the oasis of Isfahan and around Golpayegan."
 tags: "province oasis isfahan"
+link: "https://borjekabotar.com/geo/"
 ---
 
 The highest concentration of pigeons’ towers is located in the area of the oasis of [Isfahan](https://www.iranicaonline.org/articles/isfahan) crossed by the Zayandè river and its tributaries and on the westernmost area of the current province around [Golpayegan](https://www.iranicaonline.org/articles/golpayagan).

@@ -12,7 +12,7 @@ const index = () => {
     <Layout>
       <Wrapper>
         <Carousel>
-          <Carousel.Item className="min-vh-50">
+          <Carousel.Item>
             <img className="d-block w-100" src={Image2} alt="" />
             <Carousel.Caption className="d-flex flex-column justify-content-center top-0">
               <h1 className="d-md-inline-block d-none">Borj–e Kabotar</h1>
@@ -32,10 +32,10 @@ const index = () => {
 }
 
 const Wrapper = styled.section`
- img {
-   width: auto;
-   height: 100%;
- }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 `;
 
 export default index

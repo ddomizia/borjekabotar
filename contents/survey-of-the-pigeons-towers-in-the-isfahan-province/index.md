@@ -3,6 +3,7 @@ title: "Survey of the pigeons towers in the Isfahan province"
 img: 
 meta: "A survey of the pigeons towers took place in 2008 directed by the ISMEO researcher Danilo Rosati and Dr. Fariba S. Anaraki (ICHHTO)."
 tags: "survey pigeon towers"
+link: "https://borjekabotar.com/survey/"
 ---
 
 A preliminary survey of the pigeons towers was carried out in September 2008 by the [ISMEO](https://www.ismeo.eu/) researcher, **Danilo Rosati**, the photographer **Gaetano Pezzella** with the collaboration of **Dr. Fariba Saiedi Anaraki** (Institute for Cultural Heritage and Tourism, ICHHTO). “**Borj-e Kabotar**” is a research project between Italy and Iran, financially supported by ISMEO - Associazione Internazionale di Studi sul Mediterraneo e l’Oriente and Italian Ministry of Foreign Affairs and International Cooperation.

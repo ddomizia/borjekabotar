@@ -14,21 +14,20 @@ const team = () => {
   return (
     <div>
       <Layout>
-
         <Helmet>
           <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
           <link rel="shortcut icon" type="image/x-icon" href={Favicon_ico} />
           <title>Borj-e Kabotar | About</title>
 
           <meta name="description" content="The team of Borj-e Kabotar" />
-          <link rel="canonical" href="" />
+          <link rel="canonical" href="https://borjekabotar.com/about/" />
 
           <meta property="og:title" content="Borj-e Kabotar | About" />
           <meta
             property="og:description"
             content="The team of Borj-e Kabotar"
           />
-          <meta property="og:url" content="" />
+          <meta property="og:url" content="https://borjekabotar.com/about/" />
           <meta
             property="og:image"
             content={withPrefix(`static/logos/logo-bn.png`)}
@@ -39,7 +38,10 @@ const team = () => {
             property="twitter:description"
             content="The team of Borj-e Kabotar"
           />
-          <meta property="twitter:url" content="" />
+          <meta
+            property="twitter:url"
+            content="https://borjekabotar.com/about/"
+          />
           <meta
             property="twitter:image"
             content={withPrefix(`static/logos/logo-bn.png`)}
@@ -56,39 +58,39 @@ const team = () => {
             />
             <h2>Team</h2>
           </div>
-            <Row className="col-md-8 mx-auto my-5">
-              <Col>
-                <CardGroup>
-                  <Card>
-                    <Card.Img variant="top" src="" />
-                    <Card.Body>
-                      <Card.Title>Danilo Rosati</Card.Title>
-                      <Card.Text className="position">
-                        Principal Investigator
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <Card>
-                    <Card.Img variant="top" src="" />
-                    <Card.Body>
-                      <Card.Title>Ilaria Elisea Scerrato</Card.Title>
-                      <Card.Text className="position">
-                        Principal Investigator
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <Card>
-                    <Card.Img variant="top" src="" />
-                    <Card.Body>
-                      <Card.Title>F.S. Anaraki</Card.Title>
-                      <Card.Text className="position">
-                        Principal Investigator
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </CardGroup>
-              </Col>
-            </Row>
+          <Row className="col-md-8 mx-auto my-5">
+            <Col>
+              <CardGroup>
+                <Card>
+                  <Card.Img variant="top" src="" />
+                  <Card.Body>
+                    <Card.Title>Danilo Rosati</Card.Title>
+                    <Card.Text className="position">
+                      Principal Investigator
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card>
+                  <Card.Img variant="top" src="" />
+                  <Card.Body>
+                    <Card.Title>Ilaria Elisea Scerrato</Card.Title>
+                    <Card.Text className="position">
+                      Principal Investigator
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card>
+                  <Card.Img variant="top" src="" />
+                  <Card.Body>
+                    <Card.Title>F.S. Anaraki</Card.Title>
+                    <Card.Text className="position">
+                      Principal Investigator
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </CardGroup>
+            </Col>
+          </Row>
         </Wrapper>
       </Layout>
     </div>
