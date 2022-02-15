@@ -102,16 +102,6 @@ export const query = graphql`
             tags
             title
             link
-            img {
-              childImageSharp {
-                gatsbyImageData(
-                  layout: CONSTRAINED
-                  placeholder: BLURRED
-                  quality: 100
-                  formats: [AUTO, AVIF, WEBP]
-                )
-              }
-            }
           }
         }
       }

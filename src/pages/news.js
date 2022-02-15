@@ -5,7 +5,6 @@ import Layout from "../templates/ConLayout";
 
 import { Helmet } from 'react-helmet';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Container, Row, Col } from 'react-bootstrap';
 
 import Favicon_32 from "../../static/favicon/favicon-32x32.png";
 import Favicon_ico from "../../static/favicon/favicon-32x32.png";
@@ -53,19 +52,6 @@ const news = () => {
             />
             <h2>News</h2>
           </div>
-          <Container>
-            <Row className="my-5">
-              <Col sm={4}></Col>
-
-              <Col sm={8}>
-                <h2></h2>
-                <p></p>
-                <Row>
-                  <Col></Col>
-                </Row>
-              </Col>
-            </Row>
-          </Container>
         </Wrapper>
       </Layout>
     </>

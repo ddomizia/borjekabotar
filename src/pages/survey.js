@@ -102,16 +102,6 @@ export const query = graphql`
             tags
             title
             link
-            img {
-              childImageSharp {
-                gatsbyImageData(
-                  layout: FULL_WIDTH
-                  placeholder: TRACED_SVG
-                  quality: 1000
-                  formats: [AUTO, AVIF, WEBP]
-                )
-              }
-            }
           }
         }
       }
