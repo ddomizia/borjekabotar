@@ -1,52 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 import { withPrefix } from "gatsby";
-import { Helmet } from "react-helmet";
 import { StaticImage } from "gatsby-plugin-image";
+import Seo from "../components/SEO";
 
 import Layout from "../templates/ConLayout";
 import { Row, Col, Card, CardGroup } from "react-bootstrap";
-
-import Favicon_32 from "../../static/favicon/favicon-32x32.png";
-import Favicon_ico from "../../static/favicon/favicon-32x32.png";
 
 const team = () => {
   return (
     <div>
       <Layout>
-        <Helmet>
-          <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
-          <link rel="shortcut icon" type="image/x-icon" href={Favicon_ico} />
-          <title>Borj-e Kabotar | About</title>
-
-          <meta name="description" content="The team of Borj-e Kabotar" />
-          <link rel="canonical" href="https://borjekabotar.com/about/" />
-
-          <meta property="og:title" content="Borj-e Kabotar | About" />
-          <meta
-            property="og:description"
-            content="The team of Borj-e Kabotar"
-          />
-          <meta property="og:url" content="https://borjekabotar.com/about/" />
-          <meta
-            property="og:image"
-            content={withPrefix(`static/logos/logo-bn.png`)}
-          />
-
-          <meta property="twitter:title" content="Borj-e Kabotar | About" />
-          <meta
-            property="twitter:description"
-            content="The team of Borj-e Kabotar"
-          />
-          <meta
-            property="twitter:url"
-            content="https://borjekabotar.com/about/"
-          />
-          <meta
-            property="twitter:image"
-            content={withPrefix(`static/logos/logo-bn.png`)}
-          />
-        </Helmet>
+        <Seo
+          title="Borj-e Kabotar | About"
+          description="The team of Borj-e Kabotar"
+          url="https://borjekabotar.com/about/"
+          image={withPrefix(`static/logos/logo_bn.png`)}
+        />
 
         <Wrapper>
           <div className="bg-image">

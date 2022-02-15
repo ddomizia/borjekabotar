@@ -1,48 +1,21 @@
 import React from 'react'
 import styled from "styled-components";
 import { withPrefix } from 'gatsby';
-import Layout from "../templates/ConLayout";
-
-import { Helmet } from 'react-helmet';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import Favicon_32 from "../../static/favicon/favicon-32x32.png";
-import Favicon_ico from "../../static/favicon/favicon-32x32.png";
+import Layout from "../templates/ConLayout";
+import Seo from "../components/SEO";
 
 const news = () => {
   return (
     <>
       <Layout>
-        <Helmet>
-          <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
-          <link rel="shortcut icon" type="image/x-icon" href={Favicon_ico} />
-          <title>Borj-e Kabotar | News</title>
-
-          <meta name="description" content="News of Borj-e Kabotar project" />
-          <link rel="canonical" href="" />
-
-          <meta property="og:title" content="Borj-e Kabotar | News" />
-          <meta
-            property="og:description"
-            content="News of Borj-e Kabotar project"
-          />
-          <meta property="og:url" content="" />
-          <meta
-            property="og:image"
-            content={withPrefix(`static/logos/logo-bn.png`)}
-          />
-
-          <meta property="twitter:title" content="Borj-e Kabotar | News" />
-          <meta
-            property="twitter:description"
-            content="News of Borj-e Kabotar project"
-          />
-          <meta property="twitter:url" content="" />
-          <meta
-            property="twitter:image"
-            content={withPrefix(`static/logos/logo-bn.png`)}
-          />
-        </Helmet>
+        <Seo
+          title="Borj-e Kabotar | News"
+          description="News of Borj-e Kabotar project"
+          url="https://borjekabotar.com/news/"
+          image={withPrefix(`static/logos/logo_bn.png`)}
+        />
         <Wrapper>
           <div className="bg-image">
             <StaticImage
