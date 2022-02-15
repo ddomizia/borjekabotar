@@ -13,7 +13,7 @@ const index = () => {
       <Wrapper>
         <Carousel>
           <Carousel.Item>
-            <img className="d-block w-100" src={Image2} alt="" />
+            <img className="d-block w-100" src={Image2} alt="Home" />
             <Carousel.Caption className="d-flex flex-column justify-content-center top-0">
               <h1 className="d-md-inline-block d-none">Borj–e Kabotar</h1>
               <p className="d-md-inline-block align-top d-none">

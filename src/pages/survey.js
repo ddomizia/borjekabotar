@@ -15,7 +15,7 @@ const project = ({ data }) => {
         return (
           <Seo
             key={k}
-            title={node.frontmatter.title}
+            title="Borj-e Kabotar | Survey"
             description={node.frontmatter.description}
             url={node.frontmatter.url}
             image={withPrefix(`static/logos/logo_bn.png`)}
@@ -25,7 +25,7 @@ const project = ({ data }) => {
       <div className="bg-image">
         <StaticImage
           src="../../static/images/survey_background.jpg"
-          alt=""
+          alt="Survey"
           objectFit="cover"
         />
         {survey.map(({ node }, k) => {

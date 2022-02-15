@@ -14,7 +14,7 @@ const project = ({ data }) => {
         return (
           <Seo
             key={k}
-            title={node.frontmatter.title}
+            title="Borj-e Kabotar | Pubblications"
             description={node.frontmatter.description}
             url={node.frontmatter.url}
             image={withPrefix(`static/logos/logo_bn.png`)}
@@ -24,7 +24,7 @@ const project = ({ data }) => {
         <div className="bg-image">
           <StaticImage
             src="../../static/images/pubblications_background.jpg"
-            alt=""
+            alt="Pubblication"
             objectFit="cover"
             className="bg-image"
           />

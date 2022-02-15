@@ -13,7 +13,7 @@ const project = ({ data }) => {
       {geography.map(({ node }, k) => {
         return (
           <Seo key = {k}
-            title={node.frontmatter.title}
+            title="Borj-e Kabotar | Geographical Setting"
             description={node.frontmatter.description}
             url={node.frontmatter.url}
             image={withPrefix(`static/logos/logo_bn.png`)}
@@ -24,7 +24,7 @@ const project = ({ data }) => {
         <div className="bg-image">
           <StaticImage
             src="../../static/images/geo_setting_background.jpg"
-            alt=""
+            alt="Geographical Setting"
             objectFit="cover"
           />
           {geography.map(({ node }, k) => {

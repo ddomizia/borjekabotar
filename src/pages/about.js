@@ -17,48 +17,45 @@ const team = () => {
           image={withPrefix(`static/logos/logo_bn.png`)}
         />
 
-          <div className="bg-image">
-            <StaticImage
-              src="../../static/images/towers_isfahan.jpg"
-              alt=""
-              objectFit="cover"
-              className="bg-image"
-            />
-            <h2>Team</h2>
-          </div>
-          <Row className="col-md-8 mx-auto my-5">
-            <Col>
-              <CardGroup>
-                <Card>
-                  <Card.Img variant="top" src="" />
-                  <Card.Body>
-                    <Card.Title>Danilo Rosati</Card.Title>
-                    <Card.Text className="position">
-                      Principal Investigator
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-                <Card>
-                  <Card.Img variant="top" src="" />
-                  <Card.Body>
-                    <Card.Title>Ilaria Elisea Scerrato</Card.Title>
-                    <Card.Text className="position">
-                      Principal Investigator
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-                <Card>
-                  <Card.Img variant="top" src="" />
-                  <Card.Body>
-                    <Card.Title>F.S. Anaraki</Card.Title>
-                    <Card.Text className="position">
-                      Principal Investigator
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </CardGroup>
-            </Col>
-          </Row>
+        <div className="bg-image">
+          <StaticImage
+            src="../../static/images/towers_isfahan.jpg"
+            alt="About"
+            objectFit="cover"
+            className="bg-image"
+          />
+          <h2>Team</h2>
+        </div>
+        <Row className="col-md-8 mx-auto my-5">
+          <Col>
+            <CardGroup>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Danilo Rosati</Card.Title>
+                  <Card.Text className="position">
+                    Principal Investigator
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Ilaria Elisea Scerrato</Card.Title>
+                  <Card.Text className="position">
+                    Principal Investigator
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <Card>
+                <Card.Body>
+                  <Card.Title>F.S. Anaraki</Card.Title>
+                  <Card.Text className="position">
+                    Principal Investigator
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </CardGroup>
+          </Col>
+        </Row>
       </Layout>
     </div>
   );
