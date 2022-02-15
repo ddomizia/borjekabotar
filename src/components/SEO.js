@@ -10,12 +10,14 @@ const Seo = (props) => {
       <title>{props.title}</title>
       <meta name="description" content={props.description} />
       <link rel="canonical" href={props.url} />
+      
+      <meta name="robots" content="noindex" />
 
       <meta property="og:title" content={props.title} />
       <meta property="og:description" content={props.description} />
       <meta property="og:url" content={props.url} />
       {props.img && <meta property="og:image" content={props.img} />}
-    
+
       <meta property="twitter:title" content={props.title} />
       <meta property="twitter:description" content={props.description} />
       <meta property="twitter:url" content={props.url} />
