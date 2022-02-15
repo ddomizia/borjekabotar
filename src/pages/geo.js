@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { graphql, withPrefix } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -21,7 +20,7 @@ const project = ({ data }) => {
           />
         );
       })}
-      <Wrapper>
+    
         <div className="bg-image">
           <StaticImage
             src="../../static/images/geo_setting_background.jpg"
@@ -43,20 +42,10 @@ const project = ({ data }) => {
             </Container>
           );
         })}
-      </Wrapper>
+    
     </Layout>
   );
 };
-
-const Wrapper = styled.section`
-  .bg-image img {
-    height: calc(50vh);
-    width: calc(300vh);
-  }
-  .col img {
-    max-width: 850px !important;
-  }
-`;
 
 export const query = graphql`
   {

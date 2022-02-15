@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql, withPrefix } from "gatsby";
-import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Seo from "../components/SEO";
@@ -22,8 +21,7 @@ const project = ({ data }) => {
           />
         );
       })}
-      
-      <Wrapper>
+    
         <div className="bg-image">
           <StaticImage
             src="../../static/images/survey_background.jpg"
@@ -46,21 +44,9 @@ const project = ({ data }) => {
             </Container>
           );
         })}
-      </Wrapper>
     </Layout>
   );
 };
-
-const Wrapper = styled.section`
-  .bg-image img {
-    height: calc(50vh);
-    width: calc(300vh);
-    filter: brightness(70%);
-  }
-  .col img {
-    max-width: 850px !important;
-  }
-`;
 
 export const query = graphql`
   {

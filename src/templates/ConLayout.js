@@ -17,6 +17,13 @@ const Layout = ({ children }) => {
 };
 
 const Wrapper = styled.section`
+  .bg-image img {
+    height: calc(50vh);
+    width: calc(300vh);
+  }
+  .col img {
+    max-width: 850px !important;
+  }
   .bg-image {
     position: relative;
     margin: auto;

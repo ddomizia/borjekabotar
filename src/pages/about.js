@@ -1,9 +1,8 @@
 import React from "react";
-import styled from "styled-components";
 import { withPrefix } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import Seo from "../components/SEO";
 
+import Seo from "../components/SEO";
 import Layout from "../templates/ConLayout";
 import { Row, Col, Card, CardGroup } from "react-bootstrap";
 
@@ -18,7 +17,6 @@ const team = () => {
           image={withPrefix(`static/logos/logo_bn.png`)}
         />
 
-        <Wrapper>
           <div className="bg-image">
             <StaticImage
               src="../../static/images/towers_isfahan.jpg"
@@ -61,20 +59,9 @@ const team = () => {
               </CardGroup>
             </Col>
           </Row>
-        </Wrapper>
       </Layout>
     </div>
   );
 };
-
-const Wrapper = styled.section`
-  .bg-image img {
-    height: calc(50vh);
-    width: calc(300vh);
-  }
-  .col img {
-    max-width: 850px !important;
-  }
-`;
 
 export default team;
