@@ -1,56 +1,84 @@
 import React from "react";
-import "./Layout.scss";
+import styled from "styled-components";
 import { withPrefix } from "gatsby";
-import { Helmet } from "react-helmet";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
-import Favicon_32 from "../../static/favicon/favicon-32x32.png";
-import Favicon_ico from "../../static/favicon/favicon-32x32.png";
+import Seo from "../components/SEO";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Helmet>
-        <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
-        <link rel="shortcut icon" type="image/x-icon" href={Favicon_ico} />
-
-        <title>Borj-e Kabotar | Home</title>
-
-        <meta name="description" content="Borj-e Kabotar" />
-        <link rel="canonical" href="https://borjekabotar.com/" />
-
-        <meta property="og:title" content="Borj-e Kabotar" />
-        <meta
-          property="og:description"
-          content="The towers for pigeons are widespread in the areas around Isfahan and Golpayegan and even today these buildings characterise the landscape. They are often imposing structures that can sometimes be mistaken for a defensive system. The earliest **towers** in the province of Isfahan date back to the 16th-17th centuries."
-        />
-        <meta property="og:url" content="https://borjekabotar.com/" />
-        <meta
-          property="og:image"
-          content={withPrefix(`static/logos/logo_bn.png`)}
-        />
-
-        <meta
-          property="twitter:title"
-          content="The towers for pigeons are widespread in the areas around Isfahan and Golpayegan and even today these buildings characterise the landscape. They are often imposing structures that can sometimes be mistaken for a defensive system. The earliest **towers** in the province of Isfahan date back to the 16th-17th centuries."
-        />
-        <meta
-          property="twitter:description"
-          content="The towers for pigeons are widespread in the areas around Isfahan and Golpayegan and even today these buildings characterise the landscape. They are often imposing structures that can sometimes be mistaken for a defensive system. The earliest **towers** in the province of Isfahan date back to the 16th-17th centuries."
-        />
-        <meta property="twitter:url" content="https://borjekabotar.com/" />
-        <meta
-          property="twitter:image"
-          content={withPrefix(`static/logos/logo_bn.png`)}
-        />
-      </Helmet>
-      <Header />
-      {children}
-      <Footer />
+      <Seo
+        title="Borj-e Kabotar | Home"
+        description="The towers for pigeons are widespread in the areas around Isfahan and Golpayegan and even today these buildings characterise the landscape. They are often imposing structures that can sometimes be mistaken for a defensive system. The earliest **towers** in the province of Isfahan date back to the 16th-17th centuries."
+        url="https://borjekabotar.com/"
+        image={withPrefix(`static/logos/logo_bn.png`)}
+      />
+      <Wrapper>
+        <Header />
+        {children}
+        <Footer />
+      </Wrapper>
     </>
   );
 };
+
+const Wrapper = styled.section`
+  a {
+    text-decoration: none !important;
+  }
+  blockquote {
+    text-align: center;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Cinzel Decorative", cursive;
+  }
+  p,
+  li {
+    font-family: "Montserrat", sans-serif;
+  }
+  .col {
+    h3,
+    h4 {
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+  .carousel-item {
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+  .btn-link {
+    font-family: "Montserrat" !important;
+    background-color: rgba(204, 119, 34, 0.7) !important;
+    color: rgb(255, 255, 255) !important;
+    padding: 1rem !important;
+    border: none !important;
+    font-size: 2rem !important;
+    text-decoration: none !important;
+
+    &:hover {
+      background-color: rgba(204, 119, 34, 0.7);
+      border: none;
+      font-weight: 700;
+    }
+  }
+
+  .carousel-indicators,
+  .carousel-control-next,
+  .carousel-control-prev {
+    visibility: hidden;
+  }
+`;
 
 export default Layout;
