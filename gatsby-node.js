@@ -44,30 +44,3 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 };
 
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
-  return graphql(`
-    {
-      allWpPost {
-        nodes {
-          title
-          excerpt
-          content
-          slug
-        }
-      }
-    }
-  `).then((result) => {
-    //highlight-start
-    result.data.allWpPost.nodes.forEach((node) => {
-      createPage({
-        path: node.slug,
-        component: path.resolve(`./src/templates/Post.js`),
-        context: {
-          slug: node.slug,
-        },
-      });
-    });
-    //highlight-end
-  });
-};
