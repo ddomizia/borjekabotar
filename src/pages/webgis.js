@@ -8,53 +8,23 @@ import {
   Tooltip,
 } from "react-leaflet";
 
-import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import { withPrefix } from "gatsby";
 import pTowers from "../../geojson/ptowers.json";
 import Layout from "../templates/Layout";
-
-import Favicon_32 from "../../static/favicon/favicon-32x32.png";
-import Favicon_ico from "../../static/favicon/favicon-32x32.png";
+import Seo from "../components/SEO";
 
 const webgis = () => {
   const position = [32.740464, 51.493785];
   return (
     <>
       <Layout>
-        <Helmet>
-          <link rel="shortcut icon" type="image/x-icon" href={Favicon_32} />
-          <link rel="shortcut icon" type="image/x-icon" href={Favicon_ico} />
-          <title>Borj-e Kabotar | WebGIS</title>
-
-          <meta name="description" content="The WebGIS of Borj-e Kabotar" />
-          <link rel="canonical" href="https://borjekabotar.com/webgis/" />
-
-          <meta property="og:title" content="Borj-e Kabotar | WebGIS" />
-          <meta
-            property="og:description"
-            content="The WebGIS of Borj-e Kabotar"
-          />
-          <meta property="og:url" content="https://borjekabotar.com/webgis/" />
-          <meta
-            property="og:image"
-            content={withPrefix(`static/logos/logo-bn.png`)}
-          />
-
-          <meta property="twitter:title" content="Borj-e Kabotar | WebGIS" />
-          <meta
-            property="twitter:description"
-            content="The WebGIS of Borj-e Kabotar"
-          />
-          <meta
-            property="twitter:url"
-            content="https://borjekabotar.com/webgis/"
-          />
-          <meta
-            property="twitter:image"
-            content={withPrefix(`static/logos/logo-bn.png`)}
-          />
-        </Helmet>
+        <Seo
+          title="Borj-e Kabotar | WebGIS"
+          description="The WebGIS of Borj-e Kabotar"
+          url="https://borjekabotar.com/webgis/"
+          image={withPrefix(`static/logos/logo_bn.png`)}
+        />
         <Wrapper>
           <div>
             <MapContainer
