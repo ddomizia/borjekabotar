@@ -1,18 +1,19 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
+import { StaticImage } from 'gatsby-plugin-image'
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-
-const Layout = ({ children }) => {
+const BgImage = (props) => {
   return (
-    <>
-      <Wrapper>
-        <Header />
-        {children}
-        <Footer />
-      </Wrapper>
-    </>
+    <Wrapper>
+      <div className="bg-image">
+        <StaticImage
+          src={props.image}
+          alt={props.alt}
+          objectFit="cover"
+        />
+        <h2>{props.title}</h2>
+      </div>
+    </Wrapper>
   );
 };
 
@@ -29,7 +30,6 @@ const Wrapper = styled.section`
     margin: auto;
 
     h2 {
-      font-family: "Cinzel Decorative", cursive;
       position: absolute;
       text-align: center;
       font-size: 1.5rem;
@@ -57,4 +57,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default Layout;
+export default BgImage

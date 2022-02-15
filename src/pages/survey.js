@@ -3,6 +3,7 @@ import { graphql, withPrefix } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Seo from "../components/SEO";
+import BgImage from "../components/BgImage"
 import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../templates/ConLayout";
 
@@ -21,29 +22,28 @@ const project = ({ data }) => {
           />
         );
       })}
-    
-        <div className="bg-image">
-          <StaticImage
-            src="../../static/images/survey_background.jpg"
-            alt=""
-            objectFit="cover"
-          />
-          {survey.map(({ node }, k) => {
-            return <h2>{node.frontmatter.title}</h2>;
-          })}
-        </div>
-
+      <div className="bg-image">
+        <StaticImage
+          src="../../static/images/survey_background.jpg"
+          alt=""
+          objectFit="cover"
+        />
         {survey.map(({ node }, k) => {
-          return (
-            <Container key={k}>
-              <Row className="col-md-8 mx-auto my-5">
-                <Col>
-                  <div dangerouslySetInnerHTML={{ __html: node.html }} />
-                </Col>
-              </Row>
-            </Container>
-          );
+          return <h2>{node.frontmatter.title}</h2>;
         })}
+      </div>
+
+      {survey.map(({ node }, k) => {
+        return (
+          <Container key={k}>
+            <Row className="col-md-8 mx-auto my-5">
+              <Col>
+                <div dangerouslySetInnerHTML={{ __html: node.html }} />
+              </Col>
+            </Row>
+          </Container>
+        );
+      })}
     </Layout>
   );
 };
