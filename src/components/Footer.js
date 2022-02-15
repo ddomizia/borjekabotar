@@ -13,7 +13,7 @@ const Footer = () => {
             <Row>
               <Col sm={1}>
                 <StaticImage
-                  src="../../static/logos/logo_color.png"
+                  src="../../static/logos/logo_bn.png"
                   alt="Logo Borj-e Kabotar"
                   width="100"
                   placeholder="blurred"

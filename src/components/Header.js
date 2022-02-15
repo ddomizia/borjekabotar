@@ -5,7 +5,7 @@ import { withPrefix } from "gatsby";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
-import Logo from "../../static/logos/logo_color.png";
+import Logo from "../../static/logos/logo_bn.png";
 
 //markup
 const Header = () => {
