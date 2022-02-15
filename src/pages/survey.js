@@ -1,11 +1,10 @@
 import React from "react";
-import { graphql, withPrefix } from "gatsby";
+import { graphql} from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import { GatsbySeo } from "gatsby-plugin-next-seo";
 
-import Seo from "../components/SEO";
-import BgImage from "../components/BgImage"
-import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../templates/ConLayout";
+import { Container, Row, Col } from "react-bootstrap";
 
 const project = ({ data }) => {
   const survey = data.allMarkdownRemark.edges;
@@ -13,13 +12,12 @@ const project = ({ data }) => {
     <Layout>
       {survey.map(({ node }, k) => {
         return (
-          <Seo
-            key={k}
-            title="Borj-e Kabotar | Survey"
-            description={node.frontmatter.description}
-            url={node.frontmatter.url}
-            image={withPrefix(`static/logos/logo_bn.png`)}
-          />
+          <GatsbySeo
+           key={k}
+           title="Borj-e Kabotar | Survey"
+           description={node.frontmatter.description}
+           canonical="https://www.borjekabotar.com/survey/"
+        />
         );
       })}
       <div className="bg-image">

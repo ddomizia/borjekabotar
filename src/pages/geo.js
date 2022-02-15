@@ -1,10 +1,10 @@
 import React from "react";
-import { graphql, withPrefix } from "gatsby";
+import { graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
+import { GatsbySeo } from "gatsby-plugin-next-seo";
 import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../templates/ConLayout";
-import Seo from "../components/SEO"
 
 const project = ({ data }) => {
   const geography = data.allMarkdownRemark.edges;
@@ -12,11 +12,11 @@ const project = ({ data }) => {
     <Layout>
       {geography.map(({ node }, k) => {
         return (
-          <Seo key = {k}
-            title="Borj-e Kabotar | Geographical Setting"
+          <GatsbySeo
+            key={k}
+             title="Borj-e Kabotar | Geographical Setting"
             description={node.frontmatter.description}
-            url={node.frontmatter.url}
-            image={withPrefix(`static/logos/logo_bn.png`)}
+            canonical="https://www.borjekabotar.com/geo/"
           />
         );
       })}

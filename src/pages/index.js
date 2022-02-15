@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { Button, Carousel } from 'react-bootstrap'
-import Layout from "../templates/Layout"
 
+import Layout from "../templates/Layout"
 import Image2 from "../../static/images/towers_isfahan.jpg";
 
 

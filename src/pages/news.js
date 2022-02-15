@@ -3,26 +3,26 @@ import { withPrefix } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import Layout from "../templates/ConLayout";
-import Seo from "../components/SEO";
+import { GatsbySeo } from "gatsby-plugin-next-seo";
 
 const news = () => {
   return (
     <>
       <Layout>
-        <Seo
+        <GatsbySeo
           title="Borj-e Kabotar | News"
           description="News of Borj-e Kabotar project"
-          url="https://borjekabotar.com/news/"
-          image={withPrefix(`static/logos/logo_bn.png`)}
+          canonical="https://www.borjekabotar.com/news/"
         />
-          <div className="bg-image">
-            <StaticImage
-              src="../../static/images/news_background.jpg"
-              alt="News"
-              objectFit="cover"
-            />
-            <h2>News</h2>
-          </div>
+
+        <div className="bg-image">
+          <StaticImage
+            src="../../static/images/news_background.jpg"
+            alt="News"
+            objectFit="cover"
+          />
+          <h2>News</h2>
+        </div>
       </Layout>
     </>
   );

@@ -1,19 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import { withPrefix } from "gatsby";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Seo from "../components/SEO";
+import { GatsbySeo } from "gatsby-plugin-next-seo";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Seo
+      <GatsbySeo
         title="Borj-e Kabotar | Home"
         description="The towers for pigeons are widespread in the areas around Isfahan and Golpayegan and even today these buildings characterise the landscape. They are often imposing structures that can sometimes be mistaken for a defensive system. The earliest **towers** in the province of Isfahan date back to the 16th-17th centuries."
-        url="https://borjekabotar.com/"
-        image={withPrefix(`static/logos/logo_bn.png`)}
+        canonical="https://www.borjekabotar.com/"
       />
       <Wrapper>
         <Header />

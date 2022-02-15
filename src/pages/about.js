@@ -1,8 +1,7 @@
 import React from "react";
-import { withPrefix } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import { GatsbySeo } from "gatsby-plugin-next-seo";
 
-import Seo from "../components/SEO";
 import Layout from "../templates/ConLayout";
 import { Row, Col, Card, CardGroup } from "react-bootstrap";
 
@@ -10,11 +9,10 @@ const team = () => {
   return (
     <div>
       <Layout>
-        <Seo
+        <GatsbySeo
           title="Borj-e Kabotar | About"
           description="The team of Borj-e Kabotar"
-          url="https://borjekabotar.com/about/"
-          image={withPrefix(`static/logos/logo_bn.png`)}
+          canonical="https://www.borjekabotar.com/about/"
         />
 
         <div className="bg-image">

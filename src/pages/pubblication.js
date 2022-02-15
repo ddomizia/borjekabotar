@@ -1,8 +1,8 @@
 import React from "react";
-import { graphql, withPrefix } from "gatsby";
+import { graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import { GatsbySeo } from "gatsby-plugin-next-seo";
 
-import Seo from "../components/SEO";
 import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../templates/ConLayout";
 
@@ -10,17 +10,18 @@ const project = ({ data }) => {
   const bibliography = data.allMarkdownRemark.edges;
   return (
     <Layout>
+
       {bibliography.map(({ node }, k) => {
         return (
-          <Seo
+          <GatsbySeo
             key={k}
             title="Borj-e Kabotar | Pubblications"
             description={node.frontmatter.description}
-            url={node.frontmatter.url}
-            image={withPrefix(`static/logos/logo_bn.png`)}
+            canonical="https://www.borjekabotar.com/pubblications/"
           />
         );
       })}
+
         <div className="bg-image">
           <StaticImage
             src="../../static/images/pubblications_background.jpg"
@@ -32,6 +33,7 @@ const project = ({ data }) => {
             return <h2>{node.frontmatter.title}</h2>;
           })}
         </div>
+
           {bibliography.map(({ node }, k) => {
             return (
               <Container key={k}>

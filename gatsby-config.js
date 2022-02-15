@@ -14,14 +14,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-leaflet`,
     `gatsby-transformer-geojson`,
-    /*     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: "images",
-        path: `${__dirname}/src/images/`,
-      },
-      __key: "images",
-    }, */
+    'gatsby-plugin-next-seo',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

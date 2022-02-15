@@ -7,24 +7,24 @@ import {
   FeatureGroup,
   Tooltip,
 } from "react-leaflet";
-
 import styled from "styled-components";
-import { withPrefix } from "gatsby";
+import { GatsbySeo } from "gatsby-plugin-next-seo";
+
 import pTowers from "../../geojson/ptowers.json";
 import Layout from "../templates/Layout";
-import Seo from "../components/SEO";
 
 const webgis = () => {
   const position = [32.740464, 51.493785];
   return (
     <>
       <Layout>
-        <Seo
+
+        <GatsbySeo
           title="Borj-e Kabotar | WebGIS"
           description="The WebGIS of Borj-e Kabotar"
-          url="https://borjekabotar.com/webgis/"
-          image={withPrefix(`static/logos/logo_bn.png`)}
+          canonical="https://www.borjekabotar.com/webgis/"
         />
+
         <Wrapper>
           <div>
             <MapContainer
