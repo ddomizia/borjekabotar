@@ -26,7 +26,8 @@ const Footer = () => {
                   pigeon towers in the Isfahan province
                 </h5>
                 <p>
-                  Director: D. Rosati, F.S. Anaraki, I.E. Scerrato <br></br>
+                  Director: D. Rosati, F. Saiedi Anaraki, I.E. Scerrato{" "}
+                  <br></br>
                   Nation: Iran <br></br>Period: 2018 – in progress <br></br>
                   <a href="mailto:borjekabotar@gmail.com">
                     borjekabotar@gmail.com
