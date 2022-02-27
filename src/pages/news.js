@@ -20,6 +20,8 @@ const news = () => {
             src="../../static/images/news_background.jpg"
             alt="News"
             objectFit="cover"
+            imgStyle={{ width: "300vh", height: "50vh" }}
+            style={{ width: "300vh", height: "50vh" }}
           />
           <h2>News</h2>
         </div>

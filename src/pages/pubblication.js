@@ -10,7 +10,6 @@ const project = ({ data }) => {
   const bibliography = data.allMarkdownRemark.edges;
   return (
     <Layout>
-
       {bibliography.map(({ node }, k) => {
         return (
           <GatsbySeo
@@ -22,29 +21,30 @@ const project = ({ data }) => {
         );
       })}
 
-        <div className="bg-image">
-          <StaticImage
-            src="../../static/images/pubblications_background.jpg"
-            alt="Pubblication"
-            objectFit="cover"
-            className="bg-image"
-          />
-          {bibliography.map(({ node }, k) => {
-            return <h2>{node.frontmatter.title}</h2>;
-          })}
-        </div>
+      <div className="bg-image">
+        <StaticImage
+          src="../../static/images/pubblications_background.jpg"
+          alt="Pubblication"
+          objectFit="cover"
+          imgStyle={{ width: "300vh", height: "50vh" }}
+          style={{ width: "300vh", height: "50vh" }}
+        />
+        {bibliography.map(({ node }, k) => {
+          return <h2>{node.frontmatter.title}</h2>;
+        })}
+      </div>
 
-          {bibliography.map(({ node }, k) => {
-            return (
-              <Container key={k}>
-                <Row className="col-md-8 mx-auto my-5">
-                  <Col>
-                    <div dangerouslySetInnerHTML={{ __html: node.html }} />
-                  </Col>
-                </Row>
-              </Container>
-            );
-          })}
+      {bibliography.map(({ node }, k) => {
+        return (
+          <Container key={k}>
+            <Row className="col-md-8 mx-auto my-5">
+              <Col>
+                <div dangerouslySetInnerHTML={{ __html: node.html }} />
+              </Col>
+            </Row>
+          </Container>
+        );
+      })}
     </Layout>
   );
 };

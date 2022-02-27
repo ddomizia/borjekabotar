@@ -26,7 +26,7 @@ const Footer = () => {
                   pigeon towers in the Isfahan province
                 </h5>
                 <p>
-                  Director: D. Rosati, F. Saiedi Anaraki, I.E. Scerrato{" "}
+                  Danilo Rosati FSA and Fariba Saiedi Anaraki
                   <br></br>
                   Nation: Iran <br></br>Period: 2018 – in progress <br></br>
                   <a href="mailto:borjekabotar@gmail.com">
@@ -38,15 +38,26 @@ const Footer = () => {
                 <StaticImage
                   src="../../static/logos/ismeo.png"
                   alt="Logo Borj-e Kabotar"
-                  width="110"
+                  width="170"
                   placeholder="blurred"
                   objectFit="contain"
                   className="partner"
                 />
+              </Col>
+              <Col>
                 <StaticImage
                   src="../../static/logos/min_aff_est.png"
                   alt="Logo Borj-e Kabotar"
-                  width="150"
+                  width="200"
+                  placeholder="blurred"
+                  objectFit="contain"
+                />
+              </Col>
+              <Col>
+                <StaticImage
+                  src="../../static/logos/icar_logo.png"
+                  alt="Logo Borj-e Kabotar"
+                  width="100"
                   placeholder="blurred"
                   objectFit="contain"
                 />
@@ -82,9 +93,6 @@ const Wrapper = styled.section`
   }
   .partner img {
     filter: invert(100%);
-  }
-  img {
-    margin-right: 2rem;
   }
 `;
 export default Footer;

@@ -13,11 +13,11 @@ const project = ({ data }) => {
       {survey.map(({ node }, k) => {
         return (
           <GatsbySeo
-           key={k}
-           title="Borj-e Kabotar | Survey"
-           description={node.frontmatter.description}
-           canonical="https://www.borjekabotar.com/survey/"
-        />
+            key={k}
+            title="Borj-e Kabotar | Survey"
+            description={node.frontmatter.description}
+            canonical="https://www.borjekabotar.com/survey/"
+          />
         );
       })}
       <div className="bg-image">
@@ -25,6 +25,8 @@ const project = ({ data }) => {
           src="../../static/images/survey_background.jpg"
           alt="Survey"
           objectFit="cover"
+          imgStyle={{ width: "300vh", height: "50vh" }}
+          style={{ width: "300vh", height: "50vh" }}
         />
         {survey.map(({ node }, k) => {
           return <h2>{node.frontmatter.title}</h2>;

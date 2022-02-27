@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import { Button, Carousel } from 'react-bootstrap'
 
 import Layout from "../templates/Layout"
-import Image2 from "../../static/images/towers_isfahan.jpg";
+import Image2 from "../../static/images/sfondo_bk.jpg";
 
 
 const index = () => {
@@ -35,6 +35,7 @@ const Wrapper = styled.section`
   img {
     max-width: 100%;
     height: auto;
+    filter: invert(13%);
   }
 `;
 

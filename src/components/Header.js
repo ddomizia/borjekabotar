@@ -55,13 +55,13 @@ const Header = () => {
 //style
 const Wrapper = styled.section`
   .dropdown-menu {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255);
   }
   .dropdown-item {
     font-family: "Montserrat", sans-serif !important;
-    color: rgb(255, 255, 255);
+    color: rgb(0,0,0);
     &:hover {
-      color: rgb(255, 255, 255);
+      color: rgb(0,0,0);
       background-color: transparent;
       text-decoration: underline!important;
     }

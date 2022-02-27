@@ -20,7 +20,8 @@ const team = () => {
             src="../../static/images/towers_isfahan.jpg"
             alt="About"
             objectFit="cover"
-            className="bg-image"
+            imgStyle={{ width: "300vh", height: "50vh" }}
+            style={{ width: "300vh", height: "50vh" }}
           />
           <h2>Team</h2>
         </div>

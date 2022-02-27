@@ -9,7 +9,7 @@ Amirkhani A. et alii, (2009), “[Isfahan Dovecotes: Remarkable edifices of Iran
 
 Amirkhani A., Okhovat H. & Zamani, E. (2010), "[Ancient Pigeon Houses: Remarkable Example of the Asian Culture Crystallized in the Architecture of Iran and Central Anatolia](http://f7137623766.pdf)", _Asian Culture and History_. 2 (2), pp. 45-57.
 
-Beazley, E. (1977), "Some Vernacular Buildings of the Iranian Plateau", _Iran_. 15, pp. 89-102 (available on Jstor [here](ps://www.jstor.org/stable/4299579)).
+Beazley, E. (1966), "The Pigeon Towers of Isfahan", _Iran_. 4, pp. 105-109 (available on Jstor [here](https://www.jstor.org/stable/4299579)).
 
 Chardin, J. (2018), [_Voyages de Monsieur le chevalier Chardin en Perse et autre lieux de l’Orient._ _Enrichis d’un grand nombre de belles figures en taille-douce, représentant les antiquités, et les_ _choses remarquables du pays_.](https://www.academia.edu/43907597/Jean_Chardin_1711_Voyages_de_Mr_le_chevalier_Chardin_en_Perse_ll_) Steward, P. (ed).
 

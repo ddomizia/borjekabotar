@@ -14,35 +14,37 @@ const project = ({ data }) => {
         return (
           <GatsbySeo
             key={k}
-             title="Borj-e Kabotar | Geographical Setting"
+            title="Borj-e Kabotar | Geographical Setting"
             description={node.frontmatter.description}
             canonical="https://www.borjekabotar.com/geo/"
           />
         );
       })}
-    
-        <div className="bg-image">
-          <StaticImage
-            src="../../static/images/geo_setting_background.jpg"
-            alt="Geographical Setting"
-            objectFit="cover"
-          />
-          {geography.map(({ node }, k) => {
-            return <h2>{node.frontmatter.title}</h2>;
-          })}
-        </div>
+
+      <div className="bg-image">
+        <StaticImage
+          src="../../static/images/geo_setting_background.jpg"
+          alt="Geographical Setting"
+          objectFit="cover"
+          imgStyle={{ width: "300vh", height: "50vh" }}
+          style={{ width: "300vh", height: "50vh" }}
+        />
         {geography.map(({ node }, k) => {
-          return (
-            <Container key={k}>
-              <Row className="col-md-8 mx-auto my-5">
-                <Col>
-                  <div dangerouslySetInnerHTML={{ __html: node.html }} />
-                </Col>
-              </Row>
-            </Container>
-          );
+          return <h2>{node.frontmatter.title}</h2>;
         })}
-    
+      </div>
+
+      {geography.map(({ node }, k) => {
+        return (
+          <Container key={k}>
+            <Row className="col-md-8 mx-auto my-5">
+              <Col>
+                <div dangerouslySetInnerHTML={{ __html: node.html }} />
+              </Col>
+            </Row>
+          </Container>
+        );
+      })}
     </Layout>
   );
 };

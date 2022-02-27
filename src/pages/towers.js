@@ -20,30 +20,32 @@ const project = ({ data }) => {
           />
         );
       })}
-      
-        <div className="bg-image">
-          <StaticImage
-            src="../../static/images/towers_isfahan.jpg"
-            alt="Towers"
-            objectFit="cover"
-            placeholder="blurred"
-          />
-          {towers.map(({ node }, k) => {
-            return <h2>{node.frontmatter.title}</h2>;
-          })}
-        </div>
 
+      <div className="bg-image">
+        <StaticImage
+          src="../../static/images/towers_isfahan.jpg"
+          alt="Towers"
+          objectFit="cover"
+          placeholder="blurred"
+          imgStyle={{ width: "300vh", height: "50vh" }}
+          style={{ width: "300vh", height: "50vh" }}
+        />
         {towers.map(({ node }, k) => {
-          return (
-            <Container key={k}>
-              <Row className="col-md-8 mx-auto my-5">
-                <Col>
-                  <div dangerouslySetInnerHTML={{ __html: node.html }} />
-                </Col>
-              </Row>
-            </Container>
-          );
+          return <h2>{node.frontmatter.title}</h2>;
         })}
+      </div>
+
+      {towers.map(({ node }, k) => {
+        return (
+          <Container key={k}>
+            <Row className="col-md-8 mx-auto my-5">
+              <Col>
+                <div dangerouslySetInnerHTML={{ __html: node.html }} />
+              </Col>
+            </Row>
+          </Container>
+        );
+      })}
     </Layout>
   );
 };
