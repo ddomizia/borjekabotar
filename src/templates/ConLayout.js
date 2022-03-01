@@ -17,15 +17,19 @@ const Layout = ({ children }) => {
 };
 
 const Wrapper = styled.section`
+a {
+  color: rgb(60, 116, 190);
+  text-decoration: none;
+}
   .col img {
     max-width: 850px !important;
   }
   .bg-image {
     position: relative;
     margin: auto;
-    
+
     h2 {
-      font-family: "Cinzel Decorative", cursive;
+      font-family: "Cinzel Decorative";
       position: absolute;
       text-align: center;
       font-size: 1.5rem;
@@ -50,6 +54,14 @@ const Wrapper = styled.section`
         font-size: 2.8rem;
       }
     }
+  }
+  h5 {
+    text-align: center !important;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    color: gray;
   }
 `;
 

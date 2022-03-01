@@ -14,11 +14,10 @@ import pTowers from "../../geojson/ptowers.json";
 import Layout from "../templates/Layout";
 
 const webgis = () => {
-  const position = [32.740464, 51.493785];
+  const position = [32.42074, 53.68302];
   return (
     <>
       <Layout>
-
         <GatsbySeo
           title="Borj-e Kabotar | WebGIS"
           description="The WebGIS of Borj-e Kabotar"
@@ -29,9 +28,10 @@ const webgis = () => {
           <div>
             <MapContainer
               center={position}
-              zoom={9}
+              zoom={6}
               style={{ height: "100%", width: "100%", position: "absolute" }}
             >
+              
               <LayersControl position="topright">
                 <LayersControl.BaseLayer checked name="OpenStreetMap.Mapik">
                   <TileLayer

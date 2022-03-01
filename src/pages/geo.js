@@ -26,11 +26,10 @@ const project = ({ data }) => {
           src="../../static/images/geo_setting_background.jpg"
           alt="Geographical Setting"
           objectFit="cover"
-          imgStyle={{ width: "300vh", height: "50vh" }}
           style={{ width: "300vh", height: "50vh" }}
         />
         {geography.map(({ node }, k) => {
-          return <h2>{node.frontmatter.title}</h2>;
+          return <h2 key={k}>{node.frontmatter.title}</h2>;
         })}
       </div>
 

@@ -26,7 +26,7 @@ const Footer = () => {
                   pigeon towers in the Isfahan province
                 </h5>
                 <p>
-                  Danilo Rosati FSA and Fariba Saiedi Anaraki
+                  Danilo Rosati and Fariba Saiedi Anaraki
                   <br></br>
                   Nation: Iran <br></br>Period: 2018 – in progress <br></br>
                   <a href="mailto:borjekabotar@gmail.com">

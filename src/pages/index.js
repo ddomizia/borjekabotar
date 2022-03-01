@@ -35,7 +35,7 @@ const Wrapper = styled.section`
   img {
     max-width: 100%;
     height: auto;
-    filter: invert(13%);
+    filter: brightness(70%);
   }
 `;
 

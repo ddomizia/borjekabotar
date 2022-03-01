@@ -25,8 +25,7 @@ const project = ({ data }) => {
           src="../../static/images/survey_background.jpg"
           alt="Survey"
           objectFit="cover"
-          imgStyle={{ width: "300vh", height: "50vh" }}
-          style={{ width: "300vh", height: "50vh" }}
+          style={{ width: "300vh", height: "50vh", filter: "brightness(60%)" }}
         />
         {survey.map(({ node }, k) => {
           return <h2>{node.frontmatter.title}</h2>;

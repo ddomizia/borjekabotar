@@ -35,7 +35,7 @@ const Wrapper = styled.section`
   h4,
   h5,
   h6 {
-    font-family: "Cinzel Decorative", cursive;
+    font-family: "Cinzel Decorative";
   }
   p,
   li {
